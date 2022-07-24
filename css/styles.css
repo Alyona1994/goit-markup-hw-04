@@ -92,12 +92,16 @@ body {
     color: var(--accent-color);
 }
 .nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-color);
 }
 .menu-link-contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -105,6 +109,14 @@ body {
 }
 .menu-link-contact:not(:last-child) {
     margin-right: 50px;
+}
+.nav-contacts-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+.nav-contacts-icon:hover,
+.nav-contacts-icon:focus {
+    fill: var(--accent-color);
 }
 /*======================Header===============================*/
 /*======================Main*/
@@ -176,6 +188,22 @@ button:focus {
 }
 .benefits-card:not(:nth-child(4n)) {
     margin-right: 30px;
+}
+.benefits-icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 120px;
+    background: #F5F4FA;;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.benefits-item-icon {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    height: 70px;
 }
 /*======================Особенности=========================*/
 /*======================Чем мы занимаемся*/
@@ -265,6 +293,10 @@ button:focus {
 
 /*===================Наша команда======================*/
 /*=======================================Footer*/
+.footer-address-social {
+    display: flex;
+    align-items: baseline;
+}
 .logo-footer {
     color: var(--top-color);
 }
@@ -272,6 +304,9 @@ button:focus {
     background-color: #2F303A;
     padding: 60px 0;
     margin-right: 0;
+}
+.social {
+    margin-left: 70px;
 }
 .footer-list {
     font-style: normal;
@@ -293,6 +328,42 @@ button:focus {
 }
 .footer-menu-card:not(:last-child) {
     margin-bottom: 9px;
+}
+.social-list-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.social-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    fill: var(--top-color);
+}
+.social-link:hover,
+.social-link:focus {
+    background: var(--accent-color);
+}
+.social-title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-style: normal;
+}
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 /*===================Постоянные клиенты======================*/
 .clients-section {
@@ -346,6 +417,7 @@ button:focus {
 .btn-list:focus {
     background-color: var(--accent-color);
     color: var(--top-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-list.current {
     color: var(--top-color);
@@ -362,6 +434,7 @@ button:focus {
     margin-bottom: 50px;
     justify-content: center;
 }
+
 .btn-portfolio:not(:nth-child(5n)) {
     margin-right: 8px;
 }
@@ -394,6 +467,12 @@ button:focus {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
+.portfolio-link:hover,
+.portfolio-link:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-card:not(:nth-child(3n)) {
     margin-right: 30px;
 }
