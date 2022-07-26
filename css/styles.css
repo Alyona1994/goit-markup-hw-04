@@ -53,8 +53,6 @@ body {
     }
 /*======================Header*/
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 }
 .page-header-container {
@@ -100,6 +98,8 @@ body {
     color: var(--main-color);
 }
 .menu-link-contact {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -124,9 +124,13 @@ body {
     background-color: #2F303A;
     padding: 200px 0;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.png);
     background-size: cover;
-    background-color: #C4C4C4;;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #C4C4C4;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .main-title {
     font-weight: 900;
@@ -201,7 +205,6 @@ button:focus {
 }
 .benefits-item-icon {
     display: flex;
-    flex-wrap: wrap;
     width: 70px;
     height: 70px;
 }
@@ -232,7 +235,6 @@ button:focus {
 .employees {
     display: flex;
     flex-wrap: wrap;
-    
 }
 .employees-name {
     font-weight: 500;
